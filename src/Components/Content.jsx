@@ -91,21 +91,20 @@ function Content() {
 
             {/* main-todo */}
             <div className="my-4 flex flex-col items-center  w-full">
-                <h2 className="font-bold text-lg">Your Todo List</h2>
-                <hr className="w-[80%] border-black" />
+                <h2 className="font-bold text-xl text-white">Your Todo List</h2>
+                <hr className="w-[80%] mt-[19px] mb-[9px] border-black" />
                 <div className="w-[90%] toDoList flex flex-col">
 
                     {tasks.length === 0 && <div className="my-3 w-full text-center text-xl">No Tasks to display 😪</div>}
                     {tasks.map((task, index) => (
                         <div key={index} className="toDo my-3 w-full flex justify-between">
                             <div className="flex gap-2">
-                                <div className="flex">
-
-                                    <input type="checkbox" name={index} onChange={() => handleCheckbox(index)} checked={task.isCompleted} id="" />
-                                    <p className="flex justify-center items-center  "> {index + 1}</p>
+                                <div className="flex justify-center items-center">
+                                    <input className="h-5 w-5 rounded-full accent-[#93342c]" type="checkbox" name={index} onChange={() => handleCheckbox(index)} checked={task.isCompleted} id="" />
+                                    <p className="flex justify-center items-center  text-white">&nbsp;{index + 1}. </p>
                                 </div>
                                 <div className="toDo-content text-lg flex items-center">
-                                    <p className={`${task.isCompleted ? "line-through" : ""} break-words w-[200px]`}>
+                                    <p className={`${task.isCompleted ? "line-through" : ""} break-words text-white w-[200px]`}>
                                         {task.val}
                                     </p>
                                 </div>
