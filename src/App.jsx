@@ -7,12 +7,12 @@ function App() {
   return (
     <>
       <div className="background fixed w-[100vw] h-[100vh] 
-                    bg-[url('public/dark-blue-wall-shadow-background-with-flower.jpg')]
+                    bg-[url('public/dark-blue-flower.jpg')]
                     bg-cover -z-10">
       </div>
       <Navbar />
       <h1 className="mx-auto pt-10 w-fit font-[1000] text-[#ffffff78] text-[58px]">To-Do List App</h1>
-      <div className="content mx-auto p-11 w-fit mt-5  flex flex-col  rounded-xl min-h-[60vh]">
+      <div className="content mx-auto p-11 w-fit mt-[8px]  flex flex-col  rounded-xl min-h-[60vh]">
         <Content />
       </div>
       
