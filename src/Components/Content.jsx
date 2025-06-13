@@ -92,12 +92,12 @@ function Content() {
             {/* main-todo */}
             <div className="my-4 flex flex-col items-center  w-full">
                 <h2 className="font-bold text-xl text-white">Your Todo List</h2>
-                <hr className="w-[80%] mt-[19px] mb-[9px] border-black" />
-                <div className="w-[90%] toDoList flex flex-col">
+                <hr className="w-[80%] mt-[19px] mb-[9px] border-[#f4eae947]" />
+                <div className=" toDoList flex flex-col">
 
                     {tasks.length === 0 && <div className="my-3 w-full text-center text-xl">No Tasks to display 😪</div>}
                     {tasks.map((task, index) => (
-                        <div key={index} className="toDo my-3 w-full flex justify-between">
+                        <div key={index} className="toDo bg-[#ffffff3d] rounded-[41px] px-[16px] py-[5px] my-[5px] w-fit flex justify-between">
                             <div className="flex gap-2">
                                 <div className="flex justify-center items-center">
                                     <input className="h-5 w-5 rounded-full accent-[#93342c]" type="checkbox" name={index} onChange={() => handleCheckbox(index)} checked={task.isCompleted} id="" />
@@ -146,3 +146,11 @@ function Content() {
 }
 
 export default Content
+
+    // background-color: #ffffff3d;
+    // border-radius: 41px;
+    // width: fit-content;
+    // padding-left: 16px;
+    // padding-right: 16px;
+    // padding-top: 5px;
+    // padding-bottom: 5px;

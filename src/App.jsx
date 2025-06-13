@@ -11,8 +11,8 @@ function App() {
                     bg-cover -z-10">
       </div>
       <Navbar />
-      <h1 className="mx-auto pt-10 w-fit font-bold text-4xl">To-Do List App</h1>
-      <div className="content mx-auto p-11 w-fit mt-5  flex flex-col  rounded-xl min-h-[80vh]">
+      <h1 className="mx-auto pt-10 w-fit font-[1000] text-[#ffffff78] text-[58px]">To-Do List App</h1>
+      <div className="content mx-auto p-11 w-fit mt-5  flex flex-col  rounded-xl min-h-[60vh]">
         <Content />
       </div>
       
